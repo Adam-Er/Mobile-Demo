@@ -1,4 +1,3 @@
-import com.android.tools.build.jetifier.core.utils.Log
 import com.google.protobuf.gradle.proto
 
 plugins {
@@ -7,20 +6,9 @@ plugins {
     alias(libs.plugins.protobuf)
 }
 
-
-//kotlin {
-//    sourceSets {
-//        main {
-//            kotlin.setSrcDirs(mutableListOf("src"))
-//        }
-//    }
-//}
-
-
 android {
     namespace = "com.delta.mobiledemo"
     compileSdk = 34
-    Log.e("test", "${file("../../proto").absolutePath}")
 
     sourceSets.getByName("main").proto {
 
@@ -34,7 +22,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -72,7 +60,6 @@ android {
 }
 
 dependencies {
-    protobuf(project(":app", "default"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -94,6 +81,9 @@ dependencies {
     api(libs.grpc.protobuf.lite)
     api(libs.grpc.kotlin.stub)
     api(libs.protobuf.kotlin.lite)
+    api(libs.protoc)
+    api(libs.protoc.gen.grpc.java)
+    api(libs.protoc.gen.grpc.kotlin)
 }
 
 protobuf {
