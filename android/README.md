@@ -1,5 +1,5 @@
 # All
-In order to point the apk to the desired api, you need to make sure you have your "AUTHORITY" environment variable set.
+In order to point the apk to the desired api, you need to make sure you have your "API_URL" environment variable set.
 
 
 # Mac Instructions
