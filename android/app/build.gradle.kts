@@ -26,6 +26,10 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        buildConfigField("String",
+            "AUTHORITY",
+            "\"${System.getenv()["API_URL"]}\"",
+        )
     }
 
     buildTypes {
@@ -45,6 +49,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
     composeOptions {

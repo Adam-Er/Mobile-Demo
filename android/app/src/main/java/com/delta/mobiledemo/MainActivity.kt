@@ -35,7 +35,7 @@ import proto.calcRequest
 import java.io.Closeable
 
 class MainActivity : ComponentActivity() {
-    private val uri: Uri = Uri.parse("http://10.0.0.43:4300")
+    private val uri: Uri = Uri.parse(BuildConfig.AUTHORITY)
     private val client by lazy {
         ClientRCP(uri)
     }
