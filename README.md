@@ -6,7 +6,7 @@ This is a sandbox project primarily used for demonstrating different technologie
 Currently there is only a gRPC go server configured and an empty android apk which uses the gRPC client to communicate with the API.
 
 Done:
-Add boiler plate from gRPC server and Android Kotlin app using gRPC client.
+Add boiler plate for gRPC server and Android Kotlin app using gRPC client.
 
 
 TODO:
