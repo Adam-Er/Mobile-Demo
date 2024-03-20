@@ -11,6 +11,7 @@ Add boiler plate for gRPC server and Android Kotlin app using gRPC client.
 
 ## TODO:
 ### Add TLS support
+### Add postgres and migration files to api
 ### Add REST server
 ### Add Authentication (manage user creation / authentication ourselves? Implement OAuth? Implement SAML and use an IdP like keycloak? Allow users to select a client and key for authentication?)
 ### Add Angular web project
@@ -22,3 +23,8 @@ Add boiler plate for gRPC server and Android Kotlin app using gRPC client.
 ### Add websocket streaming example from phone => api => web server.
 ### Add gRPC streaming example.
 ### Add web style themeing.
+### Add android testing
+### Add web testing
+### Add api testing
+### Add build server for CI/CD (use jenkins)
+### Add makefiles and dockerize build process
