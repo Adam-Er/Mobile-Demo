@@ -7,14 +7,13 @@ Currently there is only a gRPC go server configured and an empty android apk whi
 
 ## Done:
 ### Add boiler plate for gRPC server and Android Kotlin app using gRPC client.
-
+### Add Angular web project.
 
 ## TODO:
 ### Add TLS support.
 ### Add postgres and migration files to api.
 ### Add REST server.
 ### Add Authentication (manage user creation / authentication ourselves? Implement OAuth? Implement SAML and use an IdP like keycloak? Allow users to select a client and key for authentication?).
-### Add Angular web project.
 ### Configure single activity architecture in android app using navigation graphs to route between fragments.
 ### Add repository and room DB to Android.
 ### Develop offline first architecture.
