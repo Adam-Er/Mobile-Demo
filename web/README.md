@@ -4,6 +4,7 @@ Download Node 20.11.1
 
 Use npm to download the Angular cli:
 npm install -g @angular/cli
+brew install protoc-gen-grpc-web
 
 # Web
 

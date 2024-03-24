@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  proxy:
+    container_name: envoy
+    image: envoyproxy/envoy-alpine:v1.14-latest
+    ports:
+      - 9900:9900
+      - 9901:9901
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml

@@ -8,6 +8,9 @@ Currently there is only a gRPC go server configured and an empty android apk whi
 ## Done:
 ### Add boiler plate for gRPC server and Android Kotlin app using gRPC client.
 ### Add Angular web project.
+### Added envoy proxy need for web-grpc
+### Dockerized api
+### Add gRPC client to web.
 
 ## TODO:
 ### Add TLS support.

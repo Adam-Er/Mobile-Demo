@@ -1,4 +1,4 @@
 protoc \
-    --go-grpc_out=./api \
-    --go_out=./api \
+    --go-grpc_out=./api/proto \
+    --go_out=./api/proto \
     ./proto/calc.proto

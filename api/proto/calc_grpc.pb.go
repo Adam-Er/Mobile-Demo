@@ -4,7 +4,7 @@
 // - protoc             v4.25.3
 // source: proto/calc.proto
 
-package api
+package proto
 
 import (
 	context "context"

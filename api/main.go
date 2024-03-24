@@ -5,11 +5,10 @@ import (
 	"net"
 	"sync"
 
+	"com.delta.MobileApp/proto"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-
-	proto "com.delta.MobileApp"
 )
 
 type server struct {

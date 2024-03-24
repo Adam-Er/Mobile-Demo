@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'web';
+
+  result: number | undefined;
+
+  constructor(
+    private api: ApiService
+  ) {
+  }
+
+  getResult(numA: number, numB: number) {
+     this.api.add(numA, numB).then((res) => {
+      this.result = res
+     });
+  }
 }
